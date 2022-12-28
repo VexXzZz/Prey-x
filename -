@@ -1,0 +1,58 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Enter = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Welcome = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MainFrame.Position = UDim2.new(0.371710479, 0, 0.132575765, 0)
+MainFrame.Size = UDim2.new(0, 268, 0, 240)
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+UICorner.Parent = MainFrame
+
+Enter.Name = "Enter"
+Enter.Parent = MainFrame
+Enter.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Enter.Position = UDim2.new(0.12686567, 0, 0.71041882, 0)
+Enter.Size = UDim2.new(0, 200, 0, 50)
+Enter.Font = Enum.Font.PermanentMarker
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+Enter.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripterhub/Da-Hood-Fling/main/Main.lua"))()
+end)
+
+UICorner_2.Parent = Enter
+
+Welcome.Name = "Welcome"
+Welcome.Parent = MainFrame
+Welcome.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Welcome.Size = UDim2.new(0, 268, 0, 50)
+Welcome.Font = Enum.Font.PermanentMarker
+Welcome.Text = "Welcome"
+Welcome.TextColor3 = Color3.fromRGB(0, 0, 0)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+UICorner_3.Parent = Welcome
+
+ImageLabel.Parent = MainFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.354477614, 0, 0.308333337, 0)
+ImageLabel.Size = UDim2.new(0, 77, 0, 72)
+ImageLabel.Image = "rbxassetid://11954257604"
